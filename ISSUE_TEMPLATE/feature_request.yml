@@ -1,4 +1,4 @@
-name: Feature request
+name: 💡 Feature request
 description: Suggest a new feature or enhancement for the project
 title: "feat: [Short Description of the Feature]"
 labels: ["enhancement", "feature"]
