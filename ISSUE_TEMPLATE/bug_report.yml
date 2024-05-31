@@ -1,9 +1,9 @@
 name: 🐛 Bug Report
 description: Report a bug in the project
-title: 'Bug: [Short Description of the Bug]'
+title: "bug: [Short Description of the Bug]"
 labels: ["bug", "triage"]
 projects: ["LULA-LOOP/12"]
-assignees: ''
+assignees: ""
 
 body:
   - type: markdown
@@ -16,16 +16,16 @@ body:
     attributes:
       label: Current Behavior
       description: Describe the current behavior of the application when the bug occurs. Be as detailed as possible.
-      placeholder: 'What is happening?'
+      placeholder: "What is happening?"
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: expected_behavior
     attributes:
       label: Expected Behavior
       description: Describe what you expected to happen instead.
-      placeholder: 'What should happen?'
+      placeholder: "What should happen?"
     validations:
       required: true
 
@@ -35,9 +35,9 @@ body:
       label: Steps to Reproduce
       description: Provide a step-by-step list of actions that are required to reproduce the bug. This should be detailed enough that someone else can follow it to encounter the same issue.
       placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
+        1. Go to "..."
+        2. Click on "..."
+        3. Scroll down to "..."
         4. See error
     validations:
       required: true
@@ -47,12 +47,12 @@ body:
     attributes:
       label: Reproduction Link
       description: Provide the URL where the bug occurred.
-      placeholder: 'e.g., https://example.com/page'
+      placeholder: "e.g., https://example.com/page"
     validations:
       required: true
 
   - type: dropdown
-    id: Browser
+    id: Environment
     attributes:
       label: What browsers are you seeing the problem on?
       multiple: true
@@ -70,11 +70,11 @@ body:
     attributes:
       label: Screenshot (Optional)
       description: Attach a screenshot if it helps to illustrate the bug.
-      placeholder: 'Drag and drop or paste a screenshot here.'
+      placeholder: "Drag and drop or paste a screenshot here."
 
   - type: textarea
     id: additional_information
     attributes:
       label: Additional Information
       description: Provide any additional information that might help in diagnosing and fixing the bug. This could include screenshots, logs, or any other relevant data.
-      placeholder: 'Additional context about the problem.'
+      placeholder: "Additional context about the problem."
