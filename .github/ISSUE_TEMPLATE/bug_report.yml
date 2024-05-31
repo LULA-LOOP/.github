@@ -1,62 +1,75 @@
 name: 🐛 Bug Report
-description: File a bug report.
-title: "[Bug]: "
+description: Report a bug in the project
+title: 'Bug: [Short Description of the Bug]'
 labels: ["bug", "triage"]
 projects: ["LULA-LOOP/12"]
+assignees: ''
+
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+
   - type: input
-    id: contact
+    id: current_behavior
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Current Behavior
+      description: Describe the current behavior of the application when the bug occurs. Be as detailed as possible.
+      placeholder: 'What is happening?'
     validations:
       required: true
-  - type: dropdown
-    id: version
+
+  - type: input
+    id: expected_behavior
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
+      label: Expected Behavior
+      description: Describe what you expected to happen instead.
+      placeholder: 'What should happen?'
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+
   - type: textarea
-    id: logs
+    id: steps_to_reproduce
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Steps to Reproduce
+      description: Provide a step-by-step list of actions that are required to reproduce the bug. This should be detailed enough that someone else can follow it to encounter the same issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: input
+    id: reproduction_link
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Reproduction Link
+      description: Provide the URL where the bug occurred.
+      placeholder: 'e.g., https://example.com/page'
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: List the browser(s) and version(s) where the bug is occurring.
+      placeholder: 'e.g., Chrome 91.0.4472.77'
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot (Optional)
+      description: Attach a screenshot if it helps to illustrate the bug.
+      placeholder: 'Drag and drop or paste a screenshot here.'
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information that might help in diagnosing and fixing the bug. This could include screenshots, logs, or any other relevant data.
+      placeholder: 'Additional context about the problem.'

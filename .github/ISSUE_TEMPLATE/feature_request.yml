@@ -1,0 +1,64 @@
+name: 💡 Feature request
+description: Suggest a new feature or enhancement for the project
+title: 'feat: [Short Description of the Feature]'
+labels: [enhancement, feature]
+projects: ["LULA-LOOP/12"]
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please fill out the form below to help us understand your request.
+
+  - type: input
+    id: feature_description
+    attributes:
+      label: Feature Description
+      description: Describe the new feature or enhancement you are suggesting. Be as detailed as possible.
+      placeholder: 'What is the feature you are requesting?'
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Explain why this feature would be useful and how it will benefit users. 
+      placeholder: 'Why do you want this feature? How will it benefit users?'
+    validations:
+      required: true
+
+  - type: textarea
+    id: preferred_solution
+    attributes:
+      label: Describe Preferred Solution
+      description: Describe your preferred solution for implementing the feature.
+      placeholder: 'How do you envision this feature being implemented?'
+    validations:
+      required: false
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Design Details
+      description: Provide any design details or specifications for the feature. You can also attach images if available.
+      placeholder: 'Do you have any specific design requirements or considerations?'
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Describe any alternative solutions or features you have considered. 
+      placeholder: 'Are there any alternative solutions or features you have considered?'
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information that might help us understand the request. This could include mockups, diagrams, or other relevant details.
+      placeholder: 'Additional context or details about the feature request.'
