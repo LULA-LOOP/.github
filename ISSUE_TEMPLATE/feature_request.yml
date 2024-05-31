@@ -1,9 +1,8 @@
-name: 💡 Feature request
+name: Feature request
 description: Suggest a new feature or enhancement for the project
-title: 'feat: [Short Description of the Feature]'
-labels: [enhancement, feature]
+title: "feat: [Short Description of the Feature]"
+labels: ["enhancement", "feature"]
 projects: ["LULA-LOOP/12"]
-assignees: ''
 
 body:
   - type: markdown
@@ -25,7 +24,7 @@ body:
     attributes:
       label: Motivation
       description: Explain why this feature would be useful and how it will benefit users. 
-      placeholder: 'Why do you want this feature? How will it benefit users?'
+      placeholder: "Why do you want this feature? How will it benefit users?"
     validations:
       required: true
 
@@ -34,7 +33,7 @@ body:
     attributes:
       label: Describe Preferred Solution
       description: Describe your preferred solution for implementing the feature.
-      placeholder: 'How do you envision this feature being implemented?'
+      placeholder: "How do you envision this feature being implemented?"
     validations:
       required: false
 
@@ -43,7 +42,7 @@ body:
     attributes:
       label: Design Details
       description: Provide any design details or specifications for the feature. You can also attach images if available.
-      placeholder: 'Do you have any specific design requirements or considerations?'
+      placeholder: "Do you have any specific design requirements or considerations?"
     validations:
       required: false
 
@@ -52,7 +51,7 @@ body:
     attributes:
       label: Alternatives
       description: Describe any alternative solutions or features you have considered. 
-      placeholder: 'Are there any alternative solutions or features you have considered?'
+      placeholder: "Are there any alternative solutions or features you have considered?"
     validations:
       required: false
 
@@ -61,4 +60,4 @@ body:
     attributes:
       label: Additional Information
       description: Provide any additional information that might help us understand the request. This could include mockups, diagrams, or other relevant details.
-      placeholder: 'Additional context or details about the feature request.'
+      placeholder: "Additional context or details about the feature request."
