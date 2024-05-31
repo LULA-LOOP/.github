@@ -3,7 +3,6 @@ description: Report a bug in the project
 title: "bug: [Short Description of the Bug]"
 labels: ["bug", "triage"]
 projects: ["LULA-LOOP/12"]
-assignees: ""
 
 body:
   - type: markdown
