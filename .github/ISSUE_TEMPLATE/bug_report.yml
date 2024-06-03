@@ -60,6 +60,8 @@ body:
         - iOS
         - Android
         - Huawei
+    validations:
+      required: true
 
   - type: textarea
     id: screenshots
