@@ -32,23 +32,19 @@ body:
       label: Describe Preferred Solution
       description: Describe your preferred solution for implementing the feature.
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: design
     attributes:
       label: Design Details
       description: Provide any design details or specifications for the feature. You can also attach images if available.
-    validations:
-      required: false
 
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives
       description: Describe any alternative solutions or features you have considered. 
-    validations:
-      required: false
 
   - type: textarea
     id: additional_information
