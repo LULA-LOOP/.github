@@ -59,6 +59,7 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+        - Mobile (All)
         - iOS
         - Android
         - Huawei
